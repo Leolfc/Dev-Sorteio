@@ -18,16 +18,19 @@ header {
   gap: 20px;
 }
 img {
-  max-width: 400px;
-  animation: rotate 3s ease-in-out infinite;
+  max-width: 300px;
+  animation: pulse 3s  infinite;
 }
-@keyframes rrrrr {
-  0% {
-    transform: rotate(0deg);
+@keyframes pulse {
+  0%{
+    transform: translateY(0)
   }
-  100% {
-    transform: rotate(360deg);
+  100%{
+    transform: translateY(30px)
   }
+}
+.numeroSorteado{
+  color: #c50e0e;
 }
 
 .container {
@@ -38,6 +41,7 @@ img {
   margin-top: 126px;
   margin-bottom: 50px;
   gap: 10px;
+width: 100%;
 }
 .card {
   display: flex;
@@ -52,6 +56,8 @@ img {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  margin: 0 auto
 }
 input {
   padding: 13px 233px 30px 16px;
