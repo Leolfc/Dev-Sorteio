@@ -13,6 +13,13 @@ h3.style.fontSize = "50px";
 h3.classList.add('numeroSorteado')
 h3.style.textAlign = "center";
 
+if(min || max !== Number){
+  alert('Digite apenas numeros!!')
+}
+
+if(min >= max){
+  alert('O valor minímo tem que ser maior!!')
+}
 
     
 })
